@@ -1,0 +1,39 @@
+{
+  "name": "paradigm-next",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "init:storage": "tsx -r tsconfig-paths/register scripts/initStorage.ts",
+    "init:indexes": "tsx -r tsconfig-paths/register scripts/initIndexes.ts",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "seed": "tsx -r tsconfig-paths/register scripts/seed.ts"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "3.637.0",
+    "@aws-sdk/s3-request-presigner": "3.637.0",
+    "bcrypt": "5.1.1",
+    "dotenv": "^17.2.1",
+    "ioredis": "5.3.2",
+    "jsonwebtoken": "9.0.2",
+    "mongodb": "6.8.0",
+    "next": "^15.5.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "zod": "3.23.8"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "5.0.2",
+    "@types/jsonwebtoken": "9.0.6",
+    "@types/node": "22.5.5",
+    "@types/react": "18.3.5",
+    "@types/react-dom": "18.3.0",
+    "eslint": "9.9.0",
+    "eslint-config-next": "15.0.0",
+    "tsconfig-paths": "^4.2.0",
+    "tsx": "^4.20.4",
+    "typescript": "5.5.4"
+  }
+}
